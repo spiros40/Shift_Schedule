@@ -1,0 +1,12 @@
+.button{
+    -fx-background-color: linear-gradient(lightgray,gray);
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-font-size: 16px;
+    -fx-background-radius: 10;
+    -fx-cursor: hand;
+    -fx-text-fill: black;
+    -fx-font-size: 15;
+    -fx-font-family: "Times New Roman";
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.9) , 9, 0.0 , 0 , 1 );
+}

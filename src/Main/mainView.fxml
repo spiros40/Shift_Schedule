@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:controller="Main.mainViewController"
+            xmlns:fx="http://javafx.com/fxml" prefHeight="400.0" prefWidth="600.0">
+
+    <top>
+        <fx:include source="/FXMLControllerPackage/MenuBar/MenuBar.fxml" />
+    </top>
+
+    <left>
+        <fx:include source="/FXMLControllerPackage/FastButton/FastButtonView.fxml" />
+    </left>
+
+    <center>
+        <fx:include source="/FXMLControllerPackage/ShiftView/ShiftView.fxml" />
+    </center>
+
+    <bottom>
+
+    </bottom>
+
+</BorderPane>

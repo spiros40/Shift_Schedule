@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<GridPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+          fx:controller="FXMLControllerPackage.Login.LoginController" prefHeight="300.0" prefWidth="400.0"
+          gridLinesVisible="false" alignment="CENTER" stylesheets="/StylePackage/LoginStyle/Login.css" >
+    <padding>
+        <Insets top="5" right="5" bottom="5" left="5"/>
+    </padding>
+
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="20.0"/>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="1.0"  prefWidth="1.0"/>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="150.0"/>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="20.0"/>
+    </columnConstraints>
+
+    <rowConstraints>
+        <RowConstraints minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="1.0"  prefHeight="1.0"  vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+    </rowConstraints>
+
+    <Label text="Shift  Schedule" style="-fx-underline: true;" GridPane.columnSpan="5" GridPane.valignment="CENTER"
+           alignment="CENTER" GridPane.halignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+
+    <Label text="Username:" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.halignment="RIGHT"
+           GridPane.valignment="CENTER" />
+    <TextField GridPane.columnIndex="3" GridPane.rowIndex="1" GridPane.halignment="CENTER"
+           GridPane.valignment="CENTER" minWidth="160" maxWidth="160" minHeight="30" maxHeight="30"
+               promptText="Username" fx:id="userName" />
+
+    <Label text="Password:" GridPane.columnIndex="1" GridPane.rowIndex="3" GridPane.halignment="RIGHT"
+           GridPane.valignment="CENTER"/>
+    <PasswordField GridPane.columnIndex="3" GridPane.rowIndex="3" GridPane.halignment="CENTER"
+                   GridPane.valignment="CENTER" minWidth="160" maxWidth="160"
+                   minHeight="30" maxHeight="30" promptText="Password" fx:id="passWord"/>
+
+    <HBox GridPane.columnIndex="0" GridPane.rowIndex="4" GridPane.halignment="CENTER" GridPane.columnSpan="5"
+          alignment="CENTER" spacing="20">
+        <Button text="Ok" maxHeight="30" minHeight="30" maxWidth="70" minWidth="70" onAction="#okButton"/>
+        <Button text="Cancel" maxHeight="30" minHeight="30" maxWidth="70" minWidth="70" onAction="#cancel"/>
+    </HBox>
+
+    <Label text="Wrong credentials try again!" GridPane.columnIndex="0" GridPane.rowIndex="5" GridPane.columnSpan="5"
+           GridPane.halignment="center" GridPane.valignment="CENTER" visible="false" fx:id="wrongCredentials"/>
+
+</GridPane>

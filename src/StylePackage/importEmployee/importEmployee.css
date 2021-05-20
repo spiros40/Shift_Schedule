@@ -1,0 +1,30 @@
+.label{
+    -fx-text-fill: black;
+    -fx-text-alignment: center;
+    -fx-font-style: italic;
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+    -fx-font-family: "Times New Roman";
+
+}
+.root{
+   /* -fx-background-image: url("/PicturePackage/loginBackground.jpg");*/
+    -fx-background-color: Transparent;
+    -fx-background-radius: 30px;
+}
+.text-field{
+    -fx-background-radius: 20px;
+    -fx-font-size: 16;
+}
+.button{
+    -fx-background-color: linear-gradient(lightgray,gray);
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-background-radius: 10;
+    -fx-cursor: hand;
+    -fx-text-fill: black;
+    -fx-font-size: 18;
+    -fx-font-family: "Times New Roman";
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.9) , 9, 0.0 , 0 , 1 );
+}
+

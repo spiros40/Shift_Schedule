@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="15"  stylesheets="/StylePackage/FastButtonStyle/fastButtonStyle.css"
+      xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="FXMLControllerPackage.FastButton.FastButtonController" >
+        <BorderPane.margin>
+                <Insets bottom="10.0" left="10.0" right="5.0" top="5.0"/>
+        </BorderPane.margin>
+        <Button maxHeight="40" maxWidth="100" minHeight="40" minWidth="100" text="Month View" onAction="#MonthView"/>
+        <Button maxHeight="40" maxWidth="100" minHeight="40" minWidth="100" text="Week View" onAction="#WeekView"/>
+        <Button maxHeight="40" maxWidth="100" minHeight="40" minWidth="100" text="Day View" onAction="#DayView"/>
+        <Button maxHeight="40" maxWidth="100" minHeight="40" minWidth="100" text="Employee" onAction="#Employee"/>
+        <Button maxHeight="40" maxWidth="100" minHeight="40" minWidth="100" text="Save" onAction="#Save"/>
+
+
+</VBox>

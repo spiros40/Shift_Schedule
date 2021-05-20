@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="FXMLControllerPackage.ImportEmployee.ImportEmployeeController">
+
+    <top>
+        <fx:include source="/FXMLControllerPackage/MenuBar/MenuBar.fxml" />
+    </top>
+
+    <left>
+        <fx:include source="/FXMLControllerPackage/FastButton/FastButtonView.fxml" />
+    </left>
+
+    <center >
+        <GridPane gridLinesVisible="false" stylesheets="/StylePackage/importEmployee/importEmployee.css"
+                  maxHeight="600" maxWidth="900" minWidth="NaN" minHeight="NaN">
+
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="1.0" prefWidth="1.0"/>
+            </columnConstraints>
+
+            <rowConstraints>
+                <RowConstraints minHeight="15.0" prefHeight="15.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="15.0" prefHeight="15.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="15.0" prefHeight="15.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="15.0" prefHeight="15.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="15.0" prefHeight="15.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="15.0" prefHeight="15.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="15.0" prefHeight="15.0" vgrow="SOMETIMES"/>
+            </rowConstraints>
+
+            <Label text="Add new employee" style="-fx-underline: true;" GridPane.columnSpan="5" GridPane.valignment="CENTER"
+                   alignment="CENTER_RIGHT" GridPane.halignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+
+            <!-- first name-->
+            <Label text="First name:" GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.halignment="RIGHT"
+                   GridPane.valignment="CENTER" />
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.halignment="LEFT"
+                       GridPane.valignment="CENTER" minWidth="200" maxWidth="200" minHeight="30" maxHeight="30"
+                       promptText="First name" fx:id="firstName"/>
+
+            <!-- last name-->
+            <Label text="Last name:" GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.halignment="RIGHT"
+                   GridPane.valignment="CENTER" />
+            <TextField GridPane.columnIndex="3" GridPane.rowIndex="1" GridPane.halignment="LEFT"
+                       GridPane.valignment="CENTER" accessibleRole="TEXT_FIELD" minWidth="200" maxWidth="200"
+                       minHeight="30" maxHeight="30" promptText="Last name" fx:id="lastName"/>
+
+            <!-- Department-->
+            <Label text="Department:" GridPane.columnIndex="0" GridPane.rowIndex="2" GridPane.halignment="RIGHT"
+                   GridPane.valignment="CENTER" />
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.halignment="LEFT"
+                       GridPane.valignment="CENTER" accessibleRole="TEXT_FIELD" minWidth="200" maxWidth="200"
+                       minHeight="30" maxHeight="30" promptText="Department" fx:id="department"/>
+
+            <!-- Profession-->
+            <Label text="Profession:" GridPane.columnIndex="2" GridPane.rowIndex="2" GridPane.halignment="RIGHT"
+                   GridPane.valignment="CENTER" />
+            <TextField GridPane.columnIndex="3" GridPane.rowIndex="2" GridPane.halignment="LEFT"
+                       GridPane.valignment="CENTER" minWidth="200" maxWidth="200" minHeight="30" maxHeight="30"
+                       promptText="Profession" fx:id="profession"/>
+
+            <!-- BirthDate-->
+            <Label text="BirthDate:" GridPane.columnIndex="0" GridPane.rowIndex="3" GridPane.halignment="RIGHT"
+                   GridPane.valignment="CENTER" />
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" GridPane.halignment="LEFT"
+                       GridPane.valignment="CENTER" accessibleRole="TEXT_FIELD" minWidth="200" maxWidth="200"
+                       minHeight="30" maxHeight="30" promptText="Birth date" fx:id="birthDate"/>
+
+            <!-- PhoneNumber-->
+            <Label text="PhoneNumber:"  GridPane.columnIndex="2" GridPane.rowIndex="3" GridPane.halignment="RIGHT"
+                   GridPane.valignment="CENTER" />
+            <TextField GridPane.columnIndex="3" GridPane.rowIndex="3" GridPane.halignment="LEFT"
+                       GridPane.valignment="CENTER" minWidth="200" maxWidth="200" minHeight="30" maxHeight="30"
+                       promptText="Phone number" fx:id="phoneNumber"/>
+
+            <!-- HomeAddress-->
+            <Label text="HomeAddress:" GridPane.columnIndex="0" GridPane.rowIndex="4" GridPane.halignment="RIGHT"
+                   GridPane.valignment="CENTER" />
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="4" GridPane.halignment="LEFT"
+                       GridPane.valignment="CENTER" accessibleRole="TEXT_FIELD" minWidth="200" maxWidth="200"
+                       minHeight="30" maxHeight="30" promptText="Home address" fx:id="homeAddress"/>
+
+            <!--AMKA -->
+            <Label text="AMKA:" GridPane.columnIndex="2" GridPane.rowIndex="4" GridPane.halignment="RIGHT"
+                   GridPane.valignment="CENTER" />
+            <TextField GridPane.columnIndex="3" GridPane.rowIndex="4" GridPane.halignment="LEFT"
+                       GridPane.valignment="CENTER" minWidth="200" maxWidth="200" minHeight="30" maxHeight="30"
+                       promptText="AMKA" fx:id="AMKA"/>
+
+            <!-- AFM-->
+            <Label text="AFM:" GridPane.columnIndex="0" GridPane.rowIndex="5" GridPane.halignment="RIGHT"
+                   GridPane.valignment="CENTER" />
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="5" GridPane.halignment="LEFT"
+                       GridPane.valignment="CENTER" accessibleRole="TEXT_FIELD" minWidth="200" maxWidth="200"
+                       minHeight="30" maxHeight="30" promptText="AFM" fx:id="AFM"/>
+
+            <!--AMA -->
+            <Label text="AMA:" GridPane.columnIndex="2" GridPane.rowIndex="5" GridPane.halignment="RIGHT"
+                   GridPane.valignment="CENTER" />
+            <TextField GridPane.columnIndex="3" GridPane.rowIndex="5" GridPane.halignment="LEFT"
+                       GridPane.valignment="CENTER" minWidth="200" maxWidth="200" minHeight="30" maxHeight="30"
+                       promptText="AMA" fx:id="AMA"/>
+
+            <!-- Buttons-->
+            <HBox GridPane.columnIndex="0" GridPane.rowIndex="6" GridPane.halignment="CENTER" GridPane.columnSpan="5"
+                  alignment="CENTER" spacing="40">
+                <Button text="Save" maxHeight="35" minHeight="30" maxWidth="85" minWidth="70" onAction="#saveEmployee"
+                        mnemonicParsing="false"/>
+                <Button text="Cancel" maxHeight="35" minHeight="30" maxWidth="85" minWidth="70" mnemonicParsing="false"/>
+            </HBox>
+
+        </GridPane>
+
+    </center>
+
+    <bottom>
+
+    </bottom>
+
+</BorderPane>

@@ -1,0 +1,8 @@
+.label{
+    -fx-text-fill: black;
+    -fx-text-alignment: center;
+    -fx-font-style: italic;
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+
+}

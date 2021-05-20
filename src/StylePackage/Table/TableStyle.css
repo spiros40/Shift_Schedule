@@ -1,0 +1,5 @@
+.table-view{
+    -fx-background-color: Transparent;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+    -fx-background-radius: 30px;
+}

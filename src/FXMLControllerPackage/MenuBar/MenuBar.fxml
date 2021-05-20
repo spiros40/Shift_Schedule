@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+
+    <HBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+          fx:controller="FXMLControllerPackage.MenuBar.MenuBarController"
+          stylesheets="/StylePackage/MenuBar/menuBarStyles.css" >
+    <BorderPane.margin>
+        <Insets bottom="5.0" left="10.0" right="10.0" top="10.0"/>
+    </BorderPane.margin>
+
+    <MenuBar id="menu_bar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+             minWidth="-Infinity" prefHeight="35" prefWidth="1350">
+        <Menu text="_File">
+            <MenuItem text="To start page" />
+            <MenuItem text="Open" />
+            <MenuItem text="Save" />
+            <MenuItem text="Save As" />
+            <SeparatorMenuItem />
+            <MenuItem  text="Exit" />
+        </Menu>
+        <Menu text="_Settings">
+            <MenuItem text="Serial Connection" />
+            <MenuItem text="Ethernet Connection" />
+            <SeparatorMenuItem />
+            <MenuItem text="Properties" />
+        </Menu>
+        <Menu text="_Window">
+            <MenuItem text="Home System" />
+            <MenuItem text="Home Automation" />
+            <MenuItem text="System Status" />
+        </Menu>
+        <Menu text="_About">
+            <MenuItem text="About Program" />
+            <MenuItem text="Home Manual" />
+            <SeparatorMenuItem />
+            <MenuItem text="About" />
+        </Menu>
+    </MenuBar>
+
+    </HBox>
+
