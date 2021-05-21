@@ -8,10 +8,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
-import javafx.scene.control.ButtonType;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
@@ -25,6 +22,7 @@ public class LoginController {
     private TextField passWord;
     @FXML
     private Label wrongCredentials;
+
 
     public void okButton(ActionEvent event) {
 
@@ -65,7 +63,6 @@ public class LoginController {
     public void cancel(ActionEvent actionEvent) {
         Main.stg.close();
     }
-
 
 
 
