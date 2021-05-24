@@ -20,22 +20,24 @@
             <MenuItem text="Save" />
             <MenuItem text="Save As" />
             <SeparatorMenuItem />
-            <MenuItem  text="Exit" />
+            <MenuItem text="Exit" />
         </Menu>
         <Menu text="_Settings">
-            <MenuItem text="Serial Connection" />
-            <MenuItem text="Ethernet Connection" />
+            <MenuItem text="Theme" />
+            <MenuItem text="null" />
             <SeparatorMenuItem />
             <MenuItem text="Properties" />
         </Menu>
         <Menu text="_Window">
-            <MenuItem text="Home System" />
-            <MenuItem text="Home Automation" />
-            <MenuItem text="System Status" />
+            <MenuItem text="Add new shift" onAction="#addNewShift"/>
+            <SeparatorMenuItem />
+            <MenuItem text="Edit shift" onAction="#editShift"/>
+            <SeparatorMenuItem />
+            <MenuItem text="Edit employee" onAction="#editEmployee" />
         </Menu>
         <Menu text="_About">
             <MenuItem text="About Program" />
-            <MenuItem text="Home Manual" />
+            <MenuItem text="Shift manual" />
             <SeparatorMenuItem />
             <MenuItem text="About" />
         </Menu>

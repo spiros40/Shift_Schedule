@@ -1,52 +1,47 @@
 package FXMLControllerPackage.FastButton;
 
+
 import Main.Main;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Rectangle2D;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
-import javafx.scene.layout.Pane;
-import javafx.scene.layout.VBox;
+import javafx.stage.Screen;
 import javafx.stage.Stage;
-
-import java.io.IOException;
-import java.net.URL;
+import DataPackage.ViewsEnums;
 
 public class FastButtonController {
 
+    //Create new window
+    public void openNewWindow(String windowToOpen,String windowTitle,String windowImage){
+        Rectangle2D screenBounds = Screen.getPrimary().getVisualBounds();
 
-    @FXML
-    public void MonthView(ActionEvent actionEvent) {
-        System.out.println("month");
-        try{
-            FXMLLoader fxmlLoader=new FXMLLoader(getClass().getResource("/FXMLControllerPackage/Login/LoginView.fxml"));
-            Parent root=(Parent) fxmlLoader.load();
-            Stage stage=new Stage();
-            stage.setTitle("new win");
-            stage.setScene(new Scene(root));
-            stage.getIcons().add(new Image("/PicturePackage/LoginPic.png"));
-            stage.show();
-
-    }catch (Exception e){
-            System.out.println("error");
-        }
-    }
-
-    @FXML
-    public void WeekView(ActionEvent event) {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/FXMLControllerPackage/Login/LoginView.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(windowToOpen));
             Parent root = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
-            stage.setScene(new Scene(root));
-            stage.getIcons().add(new Image("/PicturePackage/loginBackground.jpg"));
+            stage.setScene(new Scene(root,screenBounds.getWidth(),screenBounds.getHeight()));
+            stage.setTitle(windowTitle);
+            stage.getIcons().add(new Image(windowImage));
             Main.stg.close();
             stage.show();
         } catch(Exception e) {
             e.printStackTrace();
         }
+        Main.stg.close();
+    }
+
+    @FXML
+    public void MonthView(ActionEvent actionEvent) {
+
+    }
+
+    @FXML
+    public void WeekView(ActionEvent event) {
+
 
     }
     @FXML
@@ -54,22 +49,14 @@ public class FastButtonController {
 
     }
     @FXML
-    public void Employee(ActionEvent actionEvent) {
-        try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/FXMLControllerPackage/ImportEmployee/ImportEmployee.fxml"));
-            Parent root = (Parent) fxmlLoader.load();
-            Stage stage = new Stage();
-            stage.setScene(new Scene(root));
-            stage.setTitle("Employee View");
-            stage.getIcons().add(new Image("/PicturePackage/login_Background.jpg"));
-            Main.stg.close();
-            stage.show();
-        } catch(Exception e) {
-            e.printStackTrace();
-        }
+    public void Employee(ActionEvent actionEvent){openNewWindow(ViewsEnums.importEmployee.getViewPath(),
+            ViewsEnums.importEmployee.getTitleName(), ViewsEnums.importEmployee.getWindowPicture());
     }
     @FXML
     public void Save(ActionEvent actionEvent) {
         System.out.println("save");
+
+
+
     }
 }

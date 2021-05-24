@@ -2,17 +2,16 @@ package FXMLControllerPackage.Login;
 
 import Main.Main;
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
+import javafx.geometry.Rectangle2D;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
-import javafx.scene.input.KeyCode;
-import javafx.scene.input.KeyEvent;
+import javafx.stage.Screen;
 import javafx.stage.Stage;
+import DataPackage.ViewsEnums;
 
 public class LoginController {
 
@@ -25,16 +24,17 @@ public class LoginController {
 
 
     public void okButton(ActionEvent event) {
-
+        Rectangle2D screenBounds = Screen.getPrimary().getVisualBounds();
         System.out.println(userName.getText());
         System.out.println(passWord.getText());
         if (userName.getText().equals("admin")&&passWord.getText().equals("1234")) {
             try {
-                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/Main/mainView.fxml"));
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(ViewsEnums.MainView.getViewPath()));
                 Parent root = (Parent) fxmlLoader.load();
                 Stage stage = new Stage();
-                stage.setScene(new Scene(root));
-                stage.getIcons().add(new Image("/PicturePackage/login_Background.jpg"));
+                stage.setScene(new Scene(root,screenBounds.getWidth(),screenBounds.getHeight()));
+                stage.setTitle(ViewsEnums.MainView.getTitleName());
+                stage.getIcons().add(new Image(ViewsEnums.MainView.getWindowPicture()));
                 stage.setFullScreen(false);
                 stage.show();
                 Main.stg.close();

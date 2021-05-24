@@ -9,3 +9,34 @@
     -fx-cursor: hand;
     -fx-background-radius: 10;
 }
+
+.menu{
+        -fx-text-alignment: center;
+}
+.menu:hover{
+    -fx-background-color: #92ee61;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+    -fx-text-alignment: center;
+}
+.menu:focused{
+    -fx-background-color: #92ee61;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+    -fx-text-alignment: center;
+}
+
+.menu-item{
+    -fx-background-color: white;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+    -fx-text-alignment: center;
+}
+.menu-item:hover{
+    -fx-background-color: #92ee61;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+    -fx-text-alignment: center;
+}
+.menu-item:focused{
+    -fx-background-color: #92ee61;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+    -fx-text-alignment: center;
+}
+

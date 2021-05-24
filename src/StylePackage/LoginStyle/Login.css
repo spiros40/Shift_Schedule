@@ -21,7 +21,11 @@
     -fx-background-radius: 20px;
     -fx-font-size: 18;
 }
-
+.text-field:focused{
+    -fx-background-color: #92ee61;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+    -fx-text-alignment: center;
+}
 .button{
     -fx-background-radius: 20;
     -fx-font-size: 16;
@@ -31,7 +35,12 @@
     -fx-background-color: white;
 }
 .button:hover{
-    -fx-background-color: #bbb7b7;
-    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+        -fx-background-color: #92ee61;
+    -fx-effect: innershadow(three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2);
+    -fx-text-alignment: center;
+}
+.button:focused{
+    -fx-background-color: #92ee61;
+    -fx-effect: innershadow(three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2);
     -fx-text-alignment: center;
 }

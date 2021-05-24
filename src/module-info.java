@@ -12,7 +12,10 @@ module Shift.Schedule {
     opens FXMLControllerPackage.ShiftView;
     opens FXMLControllerPackage.MenuBar;
     opens FXMLControllerPackage.FastButton;
-    //opens DataPackage;
+    opens FXMLControllerPackage.AddNewShift;
+    opens DataPackage;
+
+    //styles packages
     opens PicturePackage;
     opens StylePackage;
     opens StylePackage.LoginStyle;
@@ -20,6 +23,7 @@ module Shift.Schedule {
     opens StylePackage.FastButtonStyle;
     opens StylePackage.Table;
     opens StylePackage.importEmployee;
+
 
 
 
